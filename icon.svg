@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="78 0 1000 1000">
+  <style>
+    .st0{fill:#282828}.st1{fill:gray}
+    @media (prefers-color-scheme:dark){.st0{fill:#f2f2f2}.st1{fill:#a6a6a6}}
+  </style>
+  <rect class="st1" x="299.74" y="50" width="83.34" height="629.97"/>
+  <rect class="st1" x="477.77" y="418.6" width="83.34" height="439.4" transform="translate(1157.743 118.8563) rotate(90)"/>
+  <rect class="st0" x="619.93" y="169.75" width="83.34" height="390.46" transform="translate(1026.5863 -296.6169) rotate(90)"/>
+  <rect class="st0" x="466.37" y="323.31" width="83.34" height="626.69" transform="translate(1016.0794 1273.315) rotate(-180)"/>
+</svg>

@@ -10,6 +10,8 @@ cases/unicef.html
 cases/gatefy.html
 assets/css/style.css    All styles (colours and fonts are tokens at the top)
 assets/js/main.js       Footer year + click-to-enlarge images
+favicon.ico, icon.svg, apple-touch-icon.png   Site icon
+assets/resume-lfiala.pdf  Résumé behind the Resume button (replace the file to update it)
 assets/img/home/        Case covers
 assets/img/<case>/      Case images, numbered in page order
 assets/img/about/       photo-1.webp (portrait), photo-2.webp
