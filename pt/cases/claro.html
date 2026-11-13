@@ -25,7 +25,7 @@
     <p class="hello"><a href="../index.html">Projetos</a> / Claro</p>
     <h1 class="statement">Claro <em>De dois produtos para uma plataforma unificada</em></h1>
     <p class="lede">Criei do zero dois produtos para os times internos da Claro, uma plataforma de campanhas de WhatsApp e uma plataforma de agentes de IA para chat, e depois unifiquei os dois em uma única jornada. Único designer, do discovery ao lançamento do beta.</p>
-    <dl class="meta"><div><dt>Papel</dt><dd>Product Designer Sênior</dd></div><div><dt>Time</dt><dd>1 Designer (eu), 1 SM, 1 PO, 2 TLs, 2 QAs, 6 Devs</dd></div><div><dt>Ferramentas</dt><dd>Figma, Miro, Claude, GPT</dd></div><div><dt>Período</dt><dd>mar 2025 – out 2026 (do conceito ao lançamento do beta)</dd></div></dl>
+    <dl class="meta"><div><dt>Função</dt><dd>Product Designer Sr.</dd></div><div><dt>Time</dt><dd>1 Designer (eu), 1 SM, 1 PO, 2 TLs, 2 QAs, 6 Devs</dd></div><div><dt>Ferramentas</dt><dd>Figma, Miro, Claude, GPT</dd></div><div><dt>Período</dt><dd>mar 2025 – out 2026<br>(do conceito ao beta)</dd></div></dl>
     <div class="case-plate"><img src="../../assets/img/home/claro.webp" alt="Tela de relatórios da plataforma unificada da Claro" width="2400" height="1599"></div>
   </div></header>
   <section class="sec" aria-labelledby="the-background"><div class="wrap sec-grid">
@@ -49,7 +49,7 @@
   <section class="sec" aria-labelledby="discovery"><div class="wrap sec-grid">
     <h2 class="sec-title" id="discovery">Discovery</h2>
     <div class="sec-body">
-<p>Entrevistei os times da Claro para entender quais ferramentas usavam e onde tinham dificuldades, e fiz um benchmark das plataformas existentes. A partir disso, criei personas, jornadas, user flows e a arquitetura da informação, e depois parti para wireframes e protótipos. As decisões foram tomadas lado a lado com a PO e validadas com os Tech Leads.</p>
+<p>Entrevistei os times da Claro para entender quais ferramentas usavam e onde tinham dificuldades, e fiz um benchmark das plataformas existentes. A partir disso, criei personas, jornadas, user flows e a arquitetura da informação, e depois parti para wireframes e protótipos. As decisões foram tomadas lado a lado com a Claro, a PO e validadas com os Tech Leads.</p>
 <div class="cards"><div class="card"><p class="card-label">DESCOBERTA 1: Custos que ninguém previa</p><p class="card-text">Os times só descobriam quanto uma campanha tinha custado quando a fatura chegava.</p></div><div class="card"><p class="card-label">DESCOBERTA 2: Bloqueios sem motivo aparente</p><p class="card-text">Campanhas e números eram pausados ou bloqueados. A Meta tinha um motivo, mas o produto nunca deixava isso claro.</p></div><div class="card"><p class="card-label">DESCOBERTA 3: Suporte lento e dados confusos</p><p class="card-text">Dúvidas ficavam sem resposta, e as informações eram difíceis de encontrar e de entender.</p></div><div class="card"><p class="card-label">INSIGHT 1: Uma jornada, dois produtos</p><p class="card-text">Enviar uma campanha e acompanhar as conversas que ela gerava eram partes da mesma tarefa, divididas entre produtos separados.</p></div><div class="card"><p class="card-label">INSIGHT 2: Nem todo mundo precisa de campanhas</p><p class="card-text">Muitos clientes só queriam agentes de IA e não deveriam pagar por funcionalidades de campanha que nunca usariam.</p></div><div class="card"><p class="card-label">INSIGHT 3: Uma unificação além da interface</p><p class="card-text">Unificar os produtos também simplificaria a forma como o nosso próprio time construía e operava as plataformas.</p></div></div>
     </div>
   </div></section>
@@ -57,7 +57,7 @@
     <h2 class="sec-title" id="personas">Personas</h2>
     <div class="sec-body">
 <p>Mapeei dez personas em três grupos:</p>
-<ul class="list"><li><strong>Usuários de campanhas:</strong> um Analista de Marketing que roda campanhas todos os dias, uma Gestora que acompanha resultados, orçamento e o risco de bloqueios, e um Integrador Técnico que conecta sistemas pela API.</li><li><strong>Usuários de agentes de IA:</strong> uma Admin que opera os agentes no dia a dia, um Gestor de TI focado em segurança e compliance, e uma Gestora de Negócios que acompanha o retorno sobre o investimento.</li><li><strong>Time interno:</strong> Admin da Plataforma, Gestor de Operações, Back Office e Suporte.</li></ul>
+<ul class="list"><li><strong>Usuários de campanhas:</strong> um Analista de Marketing que roda campanhas todos os dias, uma Gestora que acompanha resultados, orçamento e o risco de bloqueios, e um Integrador Técnico que conecta sistemas pela API.</li><li><strong>Usuários de agentes de IA:</strong> um Admin que opera os agentes no dia a dia, um Gestor de TI focado em segurança e compliance, e uma Gestora de Negócios que acompanha o retorno sobre o investimento.</li><li><strong>Time interno:</strong> Admin da Plataforma, Gestor de Operações, Back Office e Suporte.</li></ul>
 <p>O time interno era o mesmo nos dois produtos e fazia o mesmo trabalho duas vezes. Essa sobreposição foi um dos sinais mais claros de que os dois produtos deveriam virar um só.</p>
 <div class="figs cols-3">
 <figure><button class="zoom" type="button" aria-label="Ampliar imagem"><img src="../../assets/img/claro/01.webp" alt="Gestora de Negócios - IA Insights" width="1302" height="1201" loading="lazy"></button><figcaption>Gestora de Negócios - IA Insights</figcaption></figure>
@@ -67,7 +67,7 @@
     </div>
   </div></section>
   <section class="sec" aria-labelledby="customer-journey"><div class="wrap sec-grid">
-    <h2 class="sec-title" id="customer-journey">Jornada do cliente</h2>
+    <h2 class="sec-title" id="customer-journey">Jornada do usuário</h2>
     <div class="sec-body">
 <p>Antes, um cliente que queria enviar campanhas precisava:</p>
 <ul class="list"><li>Criar e configurar um agente de IA no IA Insights.</li><li>Abrir o IAtende separadamente para criar e enviar a campanha.</li><li>Voltar ao IA Insights para ler as conversas e interações geradas.</li></ul>
@@ -91,9 +91,9 @@
     </div>
   </div></section>
   <section class="sec" aria-labelledby="key-product-decision"><div class="wrap sec-grid">
-    <h2 class="sec-title" id="key-product-decision">Decisão-chave de produto</h2>
+    <h2 class="sec-title" id="key-product-decision">Decisão de produto</h2>
     <div class="sec-body">
-<p>Uma campanha de WhatsApp não termina quando a mensagem é enviada. As pessoas respondem, e quando não há um humano para atender, um agente de IA precisa continuar a conversa. Por isso todo cliente que enviava campanhas também precisava de um agente, e por isso os dois produtos dependiam um do outro.</p>
+<p>Uma campanha de WhatsApp não termina quando a mensagem é enviada. As pessoas respondem, e quando não há um humano para atender, um agente de IA precisa continuar a conversa. Por isso meu cliente que enviava campanhas também precisava de um agente, e por isso os dois produtos dependiam um do outro.</p>
 <p>O contrário não era verdade. Muitos clientes queriam um agente de IA para atender seus chats e não tinham interesse em enviar campanhas. Juntar tudo em um único produto poderia obrigá-los a pagar por um serviço que nunca usariam.</p>
 <p>A solução foi transformar as campanhas em um add-on. Os agentes de IA são o núcleo da plataforma, e as campanhas podem ser ativadas para os clientes que precisam delas. Cada cliente paga só pelo que usa, e quem precisa dos dois tem a jornada inteira em um só lugar.</p>
     </div>
@@ -129,7 +129,7 @@
   <section class="sec" aria-labelledby="management-layer"><div class="wrap sec-grid">
     <h2 class="sec-title" id="management-layer">Camada de gestão</h2>
     <div class="sec-body">
-<p>Também desenhei a camada interna usada apenas pelo time da Claro: cadastro de novos clientes, controle financeiro por cliente e um seletor de contexto que mostra o produto exatamente como cada cliente o vê.</p>
+<p>Também desenhei a camada interna usada apenas pelo time da Claro: cadastro de novos clientes, controle financeiro por cliente e um modo “Personificação”, que mostra o produto exatamente como cada cliente o vê.</p>
     </div>
   </div></section>
   <section class="sec" aria-labelledby="delivery-and-support"><div class="wrap sec-grid">
@@ -141,7 +141,7 @@
   <section class="sec" aria-labelledby="business-impact"><div class="wrap sec-grid">
     <h2 class="sec-title" id="business-impact">Impacto no negócio</h2>
     <div class="sec-body">
-<p>O beta foi lançado em outubro de 2026. Os times elogiaram a interface como muito mais intuitiva e destacaram que agora encontram informações que antes eram difíceis de conseguir. A unificação também simplificou a manutenção do produto: um time e uma base de código em vez de dois, com parte do back-end reaproveitada.</p>
+<p>O beta foi entregue no segundo semestre de 2026. Os times elogiaram a interface como muito mais intuitiva e destacaram que agora encontram informações que antes eram difíceis de conseguir. A unificação também simplificou a manutenção do produto: um time e uma base de código em vez de dois, com parte do back-end reaproveitada.</p>
 <div class="stats"><div class="stat"><p class="stat-num">2 → 1</p><p class="stat-text">Dois produtos unificados em uma única plataforma</p></div><div class="stat"><p class="stat-num">100+</p><p class="stat-text">Campanhas já rodando na plataforma no beta, das mais de 1.000 que a Claro envia por mês</p></div><div class="stat"><p class="stat-num">In-house</p><p class="stat-text">Envio de campanhas migrando de um fornecedor externo para a plataforma própria da Claro</p></div></div>
     </div>
   </div></section>
