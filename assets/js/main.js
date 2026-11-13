@@ -11,7 +11,7 @@
   box.className = 'lightbox';
   box.hidden = true;
   box.setAttribute('role', 'dialog');
-  box.setAttribute('aria-label', 'Enlarged image');
+  box.setAttribute('aria-label', document.documentElement.lang.indexOf('pt') === 0 ? 'Imagem ampliada' : 'Enlarged image');
   var big = document.createElement('img');
   box.appendChild(big);
   document.body.appendChild(box);
