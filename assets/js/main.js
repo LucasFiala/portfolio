@@ -1,17 +1,31 @@
-(function(){
-  var sl=document.getElementById('sl');
-  if(sl){
-    var t=sl.querySelector('.track'),n=t.children.length,i=0,d=sl.querySelector('.dots');
-    for(var k=0;k<n;k++){var e=document.createElement('i');e.dataset.k=k;d.appendChild(e)}
-    var go=function(x){i=(x+n)%n;t.style.transform='translateX(-'+i*100+'%)';[].forEach.call(d.children,function(c,j){c.classList.toggle('on',j===i)})};
-    sl.addEventListener('click',function(e){var b=e.target.closest('button');if(b)go(i+ +b.dataset.d);if(e.target.dataset.k)go(+e.target.dataset.k)});
-    go(0);
-  }
-  var els=document.querySelectorAll('.reveal');
-  if('IntersectionObserver' in window){
-    var io=new IntersectionObserver(function(es){es.forEach(function(x){if(x.isIntersecting){x.target.classList.add('in');io.unobserve(x.target)}})},{threshold:.12});
-    els.forEach(function(r){io.observe(r)});
-  }else{els.forEach(function(r){r.classList.add('in')})}
-  var here=location.pathname.split('/').pop()||'index.html';
-  document.querySelectorAll('nav div a').forEach(function(a){if(a.getAttribute('href').split('/').pop()===here)a.setAttribute('aria-current','page')});
+(function () {
+  // Footer year follows the visitor's clock, so it never needs a manual update.
+  document.querySelectorAll('[data-year]').forEach(function (el) {
+    el.textContent = new Date().getFullYear();
+  });
+
+  // Click an image to enlarge it; click again or press Esc to close.
+  var zooms = document.querySelectorAll('.zoom');
+  if (!zooms.length) return;
+  var box = document.createElement('div');
+  box.className = 'lightbox';
+  box.hidden = true;
+  box.setAttribute('role', 'dialog');
+  box.setAttribute('aria-label', 'Enlarged image');
+  var big = document.createElement('img');
+  box.appendChild(big);
+  document.body.appendChild(box);
+  var last = null;
+  function close() { box.hidden = true; big.removeAttribute('src'); if (last) last.focus(); }
+  zooms.forEach(function (btn) {
+    btn.addEventListener('click', function () {
+      var img = btn.querySelector('img');
+      big.src = img.currentSrc || img.src;
+      big.alt = img.alt;
+      last = btn;
+      box.hidden = false;
+    });
+  });
+  box.addEventListener('click', close);
+  document.addEventListener('keydown', function (e) { if (e.key === 'Escape' && !box.hidden) close(); });
 })();
